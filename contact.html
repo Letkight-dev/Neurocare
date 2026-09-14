@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-en="Resources & Contact | NeuroCare" data-km="ធនធាន និងទំនាក់ទំនង | អូទីស្សឹម កម្ពុជា">Resources & Contact | NeuroCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <section class="subpage-hero">
+      <div class="container">
+        <h1 data-en="Resources & Help Lines" data-km="ធនធាន និងខ្សែទូរស័ព្ទជំនួយ">Resources & Help Lines</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="story-form-card">
+          <h3 data-en="Send Us a Message" data-km="ផ្ញើសារមកយើង">Send Us a Message</h3>
+          <p data-en="Reach out to inquire about sensory rooms, volunteer training, or partnerships." data-km="ទាក់ទងមកយើងដើម្បីសាកសួរអំពីបន្ទប់អារម្មណ៍ ការបណ្តុះបណ្តាលស្ម័គ្រចិត្ត ឬភាពជាដៃគូ។">
+            Reach out to inquire about sensory rooms, volunteer training, or partnerships.
+          </p>
+          <form onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="c-name" data-en="Your Name" data-km="ឈ្មោះរបស់អ្នក">Your Name</label>
+              <input type="text" id="c-name" required placeholder="Name" data-en="Name" data-km="ឈ្មោះ" />
+            </div>
+            <div class="form-group">
+              <label for="c-email" data-en="Email Address" data-km="អាសយដ្ឋានអ៊ីមែល">Email Address</label>
+              <input type="email" id="c-email" required placeholder="email@address.com" />
+            </div>
+            <div class="form-group">
+              <label for="c-msg" data-en="Message" data-km="សារ">Message</label>
+              <textarea id="c-msg" rows="5" required placeholder="How can we help you?" data-en="How can we help you?" data-km="តើយើងអាចជួយអ្នកដោយរបៀបណា?"></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn" data-en="Send Message" data-km="ផ្ញើសារ">Send Message</button>
+          </form>
+        </div>
+
+        <div class="resources-card">
+          <h3 data-en="Cambodia Support Directory" data-km="បញ្ជីឈ្មោះគាំទ្រនៅកម្ពុជា">Cambodia Support Directory</h3>
+          <p class="muted" data-en="Contact these dedicated special schools and support centers in Cambodia for diagnoses and specialized educational programs." data-km="ទាក់ទងទៅសាលាពិសេស និងមជ្ឈមណ្ឌលគាំទ្រទាំងនេះនៅក្នុងប្រទេសកម្ពុជា សម្រាប់ការវិនិច្ឆ័យរោគសញ្ញា និងកម្មវិធីអប់រំឯកទេស។">
+            Contact these dedicated special schools and support centers in Cambodia for diagnoses and specialized educational programs.
+          </p>
+          <div class="center-list">
+            <div class="center-item">
+              <span class="center-name" data-en="Hands of Hope Community School" data-km="សាលាសហគមន៍ដៃនៃក្តីសង្ឃឹម">Hands of Hope Community School</span>
+              <span class="center-loc" data-en="Phnom Penh & Takhmao, Kandal" data-km="ភ្នំពេញ និងតាខ្មៅ, ខេត្តកណ្តាល">Phnom Penh & Takhmao, Kandal</span>
+              <span class="center-tel">Tel: +855 12 795 323</span>
+            </div>
+            <div class="center-item">
+              <span class="center-name" data-en="Siem Reap Special Education Center" data-km="មជ្ឈមណ្ឌលអប់រំពិសេសខេត្តសៀមរាប">Siem Reap Special Education Center</span>
+              <span class="center-loc" data-en="Siem Reap Province" data-km="ខេត្តសៀមរាប">Siem Reap Province</span>
+              <span class="center-tel">Tel: +855 63 963 881</span>
+            </div>
+            <div class="center-item">
+              <span class="center-name" data-en="Battambang Neurodiversity & Development Center" data-km="មជ្ឈមណ្ឌលលូតលាស់ និងភាពចម្រុះនៃប្រព័ន្ធប្រសាទបាត់ដំបង">Battambang Neurodiversity & Development Center</span>
+              <span class="center-loc" data-en="Battambang Municipality" data-km="ក្រុងបាត់ដំបង">Battambang Municipality</span>
+              <span class="center-tel">Tel: +855 53 952 771</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="site-modal"></div>
+    <div id="site-footer"></div>
+    <script src="site.js"></script>
+    <script src="donation.js"></script>
+  </body>
+</html>
